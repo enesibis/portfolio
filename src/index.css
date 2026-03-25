@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root, [data-theme="dark"] {
+  --bg: #070c14;
+  --text-1: #f1f5f9;
+  --text-2: #94a3b8;
+  --text-3: #64748b;
+  --text-4: #475569;
+  --border: rgba(255,255,255,0.06);
+  --border-md: rgba(255,255,255,0.08);
+  --border-lg: rgba(255,255,255,0.1);
+  --card: rgba(255,255,255,0.02);
+  --card-alt: rgba(255,255,255,0.04);
+  --section-tint: rgba(10,16,30,0.6);
+  --section-dark: rgba(7,10,20,0.8);
+  --navbar: rgba(7,12,20,0.65);
+  --navbar-scrolled: rgba(7,12,20,0.92);
+  --badge: rgba(255,255,255,0.04);
+  --tag: rgba(0,0,0,0.3);
+  --scrollbar-track: #070c14;
+  --scrollbar-thumb: #1e2a3a;
+}
+
+[data-theme="light"] {
+  --bg: #f1f5f9;
+  --text-1: #0f172a;
+  --text-2: #475569;
+  --text-3: #94a3b8;
+  --text-4: #cbd5e1;
+  --border: rgba(15,23,42,0.08);
+  --border-md: rgba(15,23,42,0.10);
+  --border-lg: rgba(15,23,42,0.14);
+  --card: rgba(255,255,255,0.75);
+  --card-alt: rgba(255,255,255,0.95);
+  --section-tint: rgba(226,232,240,0.45);
+  --section-dark: rgba(226,232,240,0.6);
+  --navbar: rgba(241,245,249,0.72);
+  --navbar-scrolled: rgba(241,245,249,0.95);
+  --badge: rgba(15,23,42,0.05);
+  --tag: rgba(15,23,42,0.06);
+  --scrollbar-track: #e2e8f0;
+  --scrollbar-thumb: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-1);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#root {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
